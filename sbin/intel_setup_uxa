@@ -1,0 +1,12 @@
+#!/bin/sh
+
+conf_dir="/etc/X11/xorg.conf.d"
+mkdir -p $conf_dir
+x11_conf="$conf_dir/40-intel.conf"
+
+if [ -e $x11_conf ]; then
+  exit 0
+fi
+
+/bin/sed 's,#,,g' /usr/share/doc/xserver-xorg-video-intel/xorg.conf > $x11_conf
+

@@ -1,0 +1,1 @@
+ACTION=="add", DRIVERS=="i915", RUN{program}+="/sbin/intel_setup_uxa"

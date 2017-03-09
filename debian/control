@@ -1,13 +1,13 @@
 Source: xserver-xorg-config-intel
-Section: unknown
+Section: x11
 Priority: optional
 Maintainer: Rohan Garg <rohan@kde.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
-Homepage: <insert the upstream URL, if relevant>
+Homepage: https://github.com/ds9-common/xserver-xorg-config-intel
 
 Package: xserver-xorg-config-intel
 Architecture: all
-Depends: ${misc:Depends}
+Depends: xserver-xorg-video-intel, ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>

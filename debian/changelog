@@ -1,0 +1,5 @@
+xserver-xorg-config-intel (0) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rohan Garg <rohan@kde.org>  Thu, 09 Mar 2017 12:00:19 +0100

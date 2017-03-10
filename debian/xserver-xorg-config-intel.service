@@ -1,0 +1,11 @@
+[Unit]
+Description=Configure intel driver with UXA
+ConditionPathExists=!/etc/X11/xorg.conf.d/40-intel.conf
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/intel_setup_uxa
+
+[Install]
+WantedBy=multi-user.target
